@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samambaia</title>
+    <link rel="stylesheet" href="styleJOAO.css">
+</head>
+<body>
+   <!-- Cabeçalho -->
+   <header class="header">
+    <img src="Imagens/logoqporraeessa-removebg-preview.png" alt="Logo" class="logo">
+    <nav class="nav">
+        <button class="nav-btn" onclick="scrollToSection('resumo')">Sobre a planta</button>
+        <button class="nav-btn" onclick="scrollToSection('info')">Informações Científicas</button>
+        <button class="nav-btn"></button>
+    </nav>
+</header>
+
+
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+        <button class="toggle-btn">&#9776;</button>
+        <div class="center">
+            <div class="icon-group">
+                <!-- Seção Nativas -->
+                <div class="icon-container">
+                    <button class="icon" id="nativas-btn">
+                        <img class="imagem" src="Imagens\plantanatural-removebg-preview.png" alt="Nativas">
+                        <span class="icon-label">Nativas</span>
+                    </button>
+                    <div class="list" id="nativas-list">
+                        <button id="Araucaria">Araucaria</button>
+                        <button id="Petunia">Petúnia</button>
+                        <button id="IrisDaPraia">Íris da Praia</button>
+                        <button id="JasmimBrasileiro">Jasmim Brasileiro</button>
+                    </div>
+                </div>
+                <!-- Seção Invasoras -->
+                <div class="icon-container">
+                    <button class="icon" id="invasoras-btn">
+                        <img class="imagem" src="Imagens\plantainvasora-removebg-preview.png" alt="Invasoras">
+                        <span class="icon-label">Invasoras</span>
+                    </button>
+                    <div class="list" id="invasoras-list">
+                        <button id="CostelaDeAdao">Costela de Adão</button>
+                        <button id="LirioDaPaz">Lírio-da-Paz</button>
+                        <button id="DracenaVermelha">Dracena Vermelha</button>
+                        <button id="FolhaDaFOrtuna">Folha da Fortuna</button>
+                        <button id="Pessegueiro">Pessegueiro</button>
+                        <button id="CristaDeGalo">Crista-de-Galo</button>
+                        <button id="CancaoDaIndia">Canção da Índia</button>
+                        <button id="FigueiraDeJardim">Figueira-de-Jardim</button>
+                        <button id="SamambaiaAmericana">Samambaia-Americana</button>
+                        <button id="Manjeircao">Manjericão</button>
+                        <button id="RaboDeBurro">Rabo-de-burro</button>
+                        <button id="PinheiroDeBuda">Pinheiro de Buda</button>
+                        <button id="OrelhaDeElefante">Orelha-de-Elefante</button>
+                        <button id="SaguDeJardim">Sagu-de-Jardim</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </aside>
+   
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+        <h1 id = nome_planta>Samambaia Americana</h1>
+        <br><br><br><br>
+        <div class="img-planta">
+            <img src="imagens/samambaia.jpg" alt="samambaia">
+            <!--<img src="https://www.google.com/imgres?q=samambaia&imgurl=https%3A%2F%2Fplantasedecor.com.br%2Fwp-content%2Fuploads%2F2024%2F02%2Fsamambaia-dentro-de-casa-930x620.jpg&imgrefurl=https%3A%2F%2Fplantasedecor.com.br%2Fsamambaia-americana-dentro-de-casa%2F&docid=CZTZ_tjWsJO5LM&tbnid=zqTAEiIiXClxvM&vet=12ahUKEwjsnsSX8fWJAxWWuJUCHTtHAT8QM3oECBwQAA..i&w=930&h=620&hcb=2&ved=2ahUKEwjsnsSX8fWJAxWWuJUCHTtHAT8QM3oECBwQAA" alt="">-->
+            <div id="resumo">
+                <h2>Resumo da planta:</h2>
+                <p>A samambaia-americana (Nephrolepis exaltata) é uma planta herbácea muito conhecida por suas folhas longas,
+                    arqueadas e cheias de folíolos delicados. Pertence ao grupo das pteridófitas, ou seja, plantas vasculares que não produzem sementes, se reproduzindo por esporos.</p>
+                <br>
+                <p>É uma planta resistente, mas sensível a condições extremas de seca ou exposição direta ao sol. Requer regas regulares e solo bem drenado para prosperar.
+                    Ideal para decoração em interiores ou jardins sombreados.</p>    
+            </div>
+            
+            
+        </div> 
+        <br>
+        <br>
+        <br>
+
+       <div id="info">
+            <h2>Informações Cíentificas: </h2>
+            <br>
+            <p> 
+                <b>Nome científico</b> - Nephrolepis exaltata;
+                <br><br>
+                <b>Família botânica</b> - Davalliaceae;
+                <br><br>
+                <b>Origem</b> - África, América Central, América do Norte, América do Sul, Ásia, Indonésia;
+                <br><br>
+                <b>Ciclo de vida</b> - Perene, ciclo de vida longo, mais de dois anos;   
+                <br><br>
+                <b>Cuidados geral</b> - Deve ser mantida em meia sombra ou luz difusa, não é tolerante ao frio intenso, ventos e geadas, bastante cultivada em ambientes internos, 
+                deve ser molhada todos os dias em pequenas quantidades, sem molhar suas folhas;
+                <br><br>
+                <b>Uso</b> - Decorativo e paisagismo;
+                <br><br>
+                <b>Curiosidades</b> - Em muitas tradições, a planta é vista como um símbolo de proteção e renovação, representando a capacidade de recomeçar e de se adaptar. 
+                Isso pode estar relacionado à sua resistência em condições adversas, onde a planta é capaz de prosperar em ambientes que seriam hostis para outras espécies;
+                <br><br>
+                <b>Conservação</b> - A samambaia-americana não está listada como uma espécie ameaçada pela IUCN (União Internacional para a Conservação da Natureza)
+                Como muitas plantas de interior, a samambaia-americana ajuda a melhorar a qualidade do ar, removendo compostos voláteis nocivos, como o formaldeído e o benzeno, comuns em ambientes urbanos e internos. Esse benefício é especialmente importante em ambientes fechados.
+                </p>
+       </div>
+    </main>
+
+
+    <!-- Botão de rolagem -->
+    <button onclick="scrollToTop()" id="scrollBtn" title="Voltar ao topo">↑</button>
+
+
+    <!-- JavaScript -->
+    <script src="indexJOAO.js"></script>
+</body>
+</html>

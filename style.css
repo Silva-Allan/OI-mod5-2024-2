@@ -1,0 +1,243 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+ 
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+ 
+ 
+  /* Estilo da barra lateral */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50px;
+    background-color: #00695c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+  }
+ 
+ 
+  .sidebar.expanded {
+    width: 250px;
+  }
+ 
+ 
+  .toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+ 
+ 
+  .icon-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+ 
+ 
+  /* Botões principais */
+  .icon {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    width: 100%;
+    justify-content: flex-start;
+    transition: margin-bottom 0.3s ease, padding 0.3s ease;
+  }
+ 
+ 
+  .icon:hover {
+    color: #80cbc4;
+  }
+ 
+ 
+  .icon img {
+    width: 24px;
+    height: 24px;
+  }
+ 
+ 
+  .icon-label {
+    display: none;
+    white-space: nowrap;
+  }
+ 
+ 
+  .sidebar.expanded .icon-label {
+    display: inline;
+  }
+ 
+ 
+  /* Listas de plantas */
+  .list {
+    display: flex;
+    visibility: hidden; /* Inicialmente invisível */
+    opacity: 0; /* Começa invisível */
+    flex-direction: column;
+    margin-left: 35px;
+    margin-top: 5px;
+    gap: 5px;
+    transform: translateY(-10px); /* Começa deslocada */
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0s 0.5s; /* Transição suave */
+  }
+ 
+ 
+  .list :hover {
+    color: #80cbc4;
+  }
+ 
+ 
+  .list.show {
+    visibility: visible; /* Torna a lista visível quando a classe show é adicionada */
+    opacity: 1;
+    transform: translateY(0); /* Move a lista para a posição original */
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0s 0s; /* Transição suave */
+  }
+ 
+ 
+  .list button {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 14px;
+    padding: 5px 10px;
+    text-align: left;
+    margin-left: 35px;
+    cursor: pointer;
+    transform: translateX(-50px); /* Iniciam deslocados */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transição suave */
+  }
+ 
+ 
+  /* Aparecer os botões das plantas com delay */
+  .list.show button:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+ 
+ 
+  .list.show button:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+ 
+ 
+  .list.show button:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+ 
+ 
+  .list.show button:nth-child(4) {
+    transition-delay: 0.4s;
+  }
+ 
+ 
+  .list.show button:nth-child(5) {
+    transition-delay: 0.5s;
+  }
+ 
+ 
+  .list.show button:nth-child(6) {
+    transition-delay: 0.6s;
+  }
+ 
+ 
+  .list.show button:nth-child(7) {
+    transition-delay: 0.7s;
+  }
+ 
+ 
+  .list.show button:nth-child(8) {
+    transition-delay: 0.8s;
+  }
+ 
+ 
+  .list.show button:nth-child(9) {
+    transition-delay: 0.9s;
+  }
+ 
+ 
+  .list.show button:nth-child(10) {
+    transition-delay: 1s;
+  }
+ 
+ 
+  /* Estilo do cabeçalho */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 50px;
+    width: calc(100% - 50px);
+    height: 60px;
+    background-color: #004d40;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    transition: left 0.3s ease-in-out, width 0.3s ease-in-out;
+    gap: 30px;
+    justify-content: right;
+  }
+ 
+ 
+  .sidebar.expanded ~ .header {
+    left: 250px;
+    width: calc(100% - 250px);
+  }
+ 
+  .nav{
+    display: flex;
+    gap: 20px;
+   
+
+
+  }
+  .nav-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+ 
+ 
+  .nav-btn:hover {
+    color: #80cbc4;
+  }
+ 
+ 
+  /* Estilo do conteúdo principal */
+  .main-content {
+    margin-top: 60px;
+    margin-left: 50px;
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
+  }
+ 
+ 
+  .sidebar.expanded ~ .main-content {
+    margin-left: 250px;
+  }

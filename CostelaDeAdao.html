@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costela de Adão</title>
+    <link rel="stylesheet" href="styleJOAO.css">
+</head>
+<body>
+   <!-- Cabeçalho -->
+   <header class="header">
+    <img src="Imagens/logoqporraeessa-removebg-preview.png" alt="Logo" class="logo">
+    <nav class="nav">
+        <button class="nav-btn" onclick="scrollToSection('resumo')">Sobre a planta</button>
+        <button class="nav-btn" onclick="scrollToSection('info')">Informações Científicas</button>
+        <button class="nav-btn"></button>
+    </nav>
+</header>
+
+
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+        <button class="toggle-btn">&#9776;</button>
+        <div class="center">
+            <div class="icon-group">
+                <!-- Seção Nativas -->
+                <div class="icon-container">
+                    <button id="inicio-btn" class="icon">
+                        <span class="icon-label">Início</span>
+                    </button>
+                </div>
+                <!-- Seção Nativas -->
+                <div class="icon-container">
+                    <button class="icon" id="nativas-btn">
+                        <img class="imagem" src="Imagens\plantanatural-removebg-preview.png" alt="Nativas">
+                        <span class="icon-label">Nativas</span>
+                    </button>
+                    <div class="list" id="nativas-list">
+                        <button id="Araucaria">Araucaria</button>
+                        <button id="Petunia">Petúnia</button>
+                        <button id="IrisDaPraia">Íris da Praia</button>
+                        <button id="JasmimBrasileiro">Jasmim Brasileiro</button>
+                    </div>
+                </div>
+                <!-- Seção Invasoras -->
+                <div class="icon-container">
+                    <button class="icon" id="invasoras-btn">
+                        <img class="imagem" src="Imagens\plantainvasora-removebg-preview.png" alt="Invasoras">
+                        <span class="icon-label">Invasoras</span>
+                    </button>
+                    <div class="list" id="invasoras-list">
+                        <button id="CostelaDeAdao">Costela de Adão</button>
+                        <button id="LirioDaPaz">Lírio-da-Paz</button>
+                        <button id="DracenaVermelha">Dracena Vermelha</button>
+                        <button id="FolhaDaFOrtuna">Folha da Fortuna</button>
+                        <button id="Pessegueiro">Pessegueiro</button>
+                        <button id="CristaDeGalo">Crista-de-Galo</button>
+                        <button id="CancaoDaIndia">Canção da Índia</button>
+                        <button id="FigueiraDeJardim">Figueira-de-Jardim</button>
+                        <button id="SamambaiaAmericana">Samambaia-Americana</button>
+                        <button id="Manjeircao">Manjericão</button>
+                        <button id="RaboDeBurro">Rabo-de-burro</button>
+                        <button id="PinheiroDeBuda">Pinheiro de Buda</button>
+                        <button id="OrelhaDeElefante">Orelha-de-Elefante</button>
+                        <button id="SaguDeJardim">Sagu-de-Jardim</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </aside>
+   
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+        <h1 id = nome_planta>Costela de Adão</h1>
+        <br><br>
+        <div class="img-planta">
+            <img src="imagens/costela de adao.jpg" alt="Costela-de-Adao">
+            <!--<img src="https://www.google.com/imgres?q=samambaia&imgurl=https%3A%2F%2Fplantasedecor.com.br%2Fwp-content%2Fuploads%2F2024%2F02%2Fsamambaia-dentro-de-casa-930x620.jpg&imgrefurl=https%3A%2F%2Fplantasedecor.com.br%2Fsamambaia-americana-dentro-de-casa%2F&docid=CZTZ_tjWsJO5LM&tbnid=zqTAEiIiXClxvM&vet=12ahUKEwjsnsSX8fWJAxWWuJUCHTtHAT8QM3oECBwQAA..i&w=930&h=620&hcb=2&ved=2ahUKEwjsnsSX8fWJAxWWuJUCHTtHAT8QM3oECBwQAA" alt="">-->
+            <div id="resumo">
+                <h2>Resumo da planta:</h2>
+                <p>Uma planta tropical famosa por suas folhas grandes e recortadas. 
+                    Nativa das florestas da América Central, é usada tanto como ornamental quanto pela produção de frutos comestíveis.</p>   
+            </div>
+            
+            
+        </div> 
+        <br>
+        <br>
+        <br>
+
+       <div id="info">
+            <h2>Informações Cíentificas: </h2>
+            <br>
+            <p> 
+                <b>Nome científico</b> - Monstera deliciosa;
+                <br><br>
+                <b>Família</b> - Araceae;
+                <br><br>
+                <b>Origem</b> - Originária do México e Panamá;
+                <br><br>
+                <b>Ciclo de vida</b> - Perene, ciclo de vida longo, mais de dois anos;
+                <br><br>
+                <b>Período de floração</b> - Outubro a janeiro e abril a maio;
+                <br><br>
+                <b>Cuidados Gerais</b> - Elas sobrevivem bem na luz indireta ou em locais que recebem claridade por apenas um período do dia.
+                Caso suas folhas comecem a amarelar significa que estão recebendo muito sol, deve-se evitar ar condicionado e aquecedores por perto. 
+                É recomendado a troca de vasos anualmente, sempre optando por um tamanho maior para que ela consiga crescer, quando atingir o tamanho 
+                desejado basta trocar de vaso por um do mesmo tamanho. Deve ser regada duas vezes por semana e no inverno uma vez ou a cada 15 dias.
+                <br><br>
+                <b>Uso</b> - Decoração;
+                <br><br>
+                <b>Curiosidades</b> - Seu nome é monstera deliciosa devido a um fruto que cheira a tutti-frutti quando maduro, pode ser consumido, 
+                porém é raro de ser encontrado e quando verde o fruto é tóxico;
+                <br><br>
+                <b>Conservação</b> - É uma planta exótica, e não consta na lista da IUCN (União Internacional para a Conservação da Natureza)
+                não tendo risco de extinção. Quando cultivada fora da sua área de distribuição natural, ela pode se tornar invasiva, 
+                principalmente em áreas tropicais e subtropicais, como ilhas do Pacifico ou na Ásia, podendo afetar ecossistemas nativos se 
+                espalhando rapidamente.
+
+
+                </p>
+       </div>
+    </main>
+
+
+    <!-- Botão de rolagem -->
+    <button onclick="scrollToTop()" id="scrollBtn" title="Voltar ao topo">↑</button>
+
+
+    <!-- JavaScript -->
+    <script src="indexJOAO.js"></script>
+</body>
+</html>

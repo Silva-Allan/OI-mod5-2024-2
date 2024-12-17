@@ -1,0 +1,398 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+}
+
+
+/* Estilização do botão scroll */
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  background-color:#004d40;
+  color: white;
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+#scrollBtn:hover {
+  background-color: #555;
+}
+
+
+/* Estilo da barra lateral */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50px;
+  background-color: #00695c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 0;
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+
+.sidebar.expanded {
+  width: 250px;
+}
+
+
+.sidebar.expanded .icon img {
+  transform: scale(1.5); /* Leve aumento no tamanho */
+  opacity: 1;
+}
+
+
+.sidebar.hidden {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+
+.icon-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+
+/* Botões principais */
+.icon {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  width: 100%;
+  justify-content: flex-start;
+  transition: margin-bottom 0.3s ease, padding 0.3s ease;
+}
+
+
+.icon:hover {
+  color: #80cbc4;
+}
+
+
+.icon img {
+  width: 24px;
+  height: 24px;
+}
+
+
+.icon-label {
+  display: none;
+  white-space: nowrap;
+  font-size: 20px;
+}
+
+
+.sidebar.expanded .icon-label {
+  display: inline;
+}
+
+
+/* Listas de plantas */
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  position: relative; /* Permite animar o botão sem afetar o layout geral */
+  transition: transform 0.3s ease; /* Transição suave de movimento */
+}
+
+
+
+
+.icon-container.expanded {
+  margin-bottom: 150px; /* Ajusta o espaço quando a lista está aberta */
+}
+
+
+.imagem {
+  width: 500px;
+}
+
+
+.list {
+  display: none; /* Inicialmente escondida */
+  flex-direction: column;
+  opacity: 0; /* Transparente */
+  transform: scaleY(0.8); /* Levemente comprimida verticalmente */
+  transform-origin: top; /* O efeito começa do topo */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+.list.show {
+  display: flex; /* Torna visível com flex */
+  justify-content: center;
+  opacity: 1; /* Opaco */
+  transform: scaleY(1); /* Escala completa */
+}
+
+
+
+
+.list :hover {
+  color: #80cbc4;
+}
+
+
+.list button {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 14px;
+  padding: 5px 10px;
+  text-align: left;
+  margin-left: 35px;
+  cursor: pointer;
+  transform: translateY(-10px); /* Deslocados inicialmente */
+  opacity: 0; /* Invisíveis inicialmente */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+.list.show button {
+  transform: translateY(0); /* Voltam para a posição original */
+  opacity: 1; /* Ficam visíveis */
+}
+
+
+/* Aparecer os botões das plantas com delay */
+.list.show button:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+
+.list.show button:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+
+.list.show button:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+
+.list.show button:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+
+.list.show button:nth-child(5) {
+  transition-delay: 0.5s;
+}
+
+
+.list.show button:nth-child(6) {
+  transition-delay: 0.6s;
+}
+
+
+.list.show button:nth-child(7) {
+  transition-delay: 0.7s;
+}
+
+
+.list.show button:nth-child(8) {
+  transition-delay: 0.8s;
+}
+
+
+.list.show button:nth-child(9) {
+  transition-delay: 0.9s;
+}
+
+
+.list.show button:nth-child(10) {
+  transition-delay: 1s;
+}
+
+
+/* Estilo do cabeçalho */
+.header {
+  display: flex;
+  align-items: center; /* Centraliza os itens verticalmente */
+  justify-content: space-between; /* Espaço entre o logo e a navegação */
+  position: fixed;
+  top: 0;
+  left: 50px; /* Alinha considerando a barra lateral */
+  width: calc(100% - 50px); /* Adapta o tamanho ao espaço */
+  height: 75px;
+  background-color: #004d40;
+  padding: 0 20px;
+  color: white;
+  transition: left 0.3s ease-in-out, width 0.3s ease-in-out;
+
+
+}
+
+
+.logo {
+  display: flex;
+  height: 50px; /* Ajusta o tamanho do logo */
+}
+
+
+.sidebar.sidebar.expanded ~ .logo {
+  padding-left: 260px;
+}
+
+
+.nav {
+  display: flex;
+  gap: 25px; /* Espaço entre os botões */
+}
+
+
+.sidebar.expanded ~ .header {
+  left: 250px;
+  width: calc(100% - 250px);
+}
+
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 19px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-left: 5px;
+}
+
+
+.nav-btn:hover {
+  color: #80cbc4;
+}
+
+
+/* Estilo do conteúdo principal */
+.main-content {
+  margin-top: 60px;
+  margin-left: 50px;
+  padding: 20px;
+  transition: margin-left 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+
+.sidebar.expanded ~ .main-content {
+  margin-left: 250px;
+}
+
+
+/* Ajuste o espaçamento entre os botões */
+.icon-container {
+  transition: margin-bottom 0.3s ease;
+}
+
+
+.sidebar .icon-container {
+  margin-bottom: 10px; /* Definir um pequeno espaçamento entre os botões */
+}
+
+
+.sidebar.expanded .icon-container {
+  margin-bottom: 20px; /* Maior distância quando as listas estão abertas */
+}
+
+
+.sidebar.expanded .list.show ~ .icon-container {
+  margin-bottom: 20px; /* Mantém o espaçamento maior quando as listas estão abertas */
+}
+
+
+
+
+/*IMAGENS*/
+.img-planta{
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.img-planta img{
+  width: 25%;
+  height: 25%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.654);
+}
+
+#resumo{
+font-family: 'Times New Roman', Times, serif;
+font-size: large;
+}
+#resumo >h2{
+font-family: 'Times New Roman', Times, serif;
+font-size: 40px;
+
+}
+
+#resumo >p{
+  font-size:25px;
+}
+
+#info{
+font-family: 'Times New Roman', Times, serif;
+font-size: 25px;
+}
+#info >h2{
+font-family: 'Times New Roman', Times, serif;
+font-size: 40px;
+
+}
+
+#nome_planta{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 45px;  
+  text-align: center;
+  }
+

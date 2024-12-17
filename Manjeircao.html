@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manjericão</title>
+    <link rel="stylesheet" href="styleJOAO.css">
+</head>
+<body>
+   <!-- Cabeçalho -->
+   <header class="header">
+    <img src="Imagens/logoqporraeessa-removebg-preview.png" alt="Logo" class="logo">
+    <nav class="nav">
+        <button class="nav-btn" onclick="scrollToSection('resumo')">Sobre a planta</button>
+        <button class="nav-btn" onclick="scrollToSection('info')">Informações Científicas</button>
+        <button class="nav-btn"></button>
+    </nav>
+</header>
+
+
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+        <button class="toggle-btn">&#9776;</button>
+        <div class="center">
+            <div class="icon-group">
+                <!-- Seção Nativas -->
+                <div class="icon-container">
+                    <button class="icon" id="nativas-btn">
+                        <img class="imagem" src="Imagens\plantanatural-removebg-preview.png" alt="Nativas">
+                        <span class="icon-label">Nativas</span>
+                    </button>
+                    <div class="list" id="nativas-list">
+                        <button id="Araucaria">Araucaria</button>
+                        <button id="Petunia">Petúnia</button>
+                        <button id="IrisDaPraia">Íris da Praia</button>
+                        <button id="JasmimBrasileiro">Jasmim Brasileiro</button>
+                    </div>
+                </div>
+                <!-- Seção Invasoras -->
+                <div class="icon-container">
+                    <button class="icon" id="invasoras-btn">
+                        <img class="imagem" src="Imagens\plantainvasora-removebg-preview.png" alt="Invasoras">
+                        <span class="icon-label">Invasoras</span>
+                    </button>
+                    <div class="list" id="invasoras-list">
+                        <button id="CostelaDeAdao">Costela de Adão</button>
+                        <button id="LirioDaPaz">Lírio-da-Paz</button>
+                        <button id="DracenaVermelha">Dracena Vermelha</button>
+                        <button id="FolhaDaFOrtuna">Folha da Fortuna</button>
+                        <button id="Pessegueiro">Pessegueiro</button>
+                        <button id="CristaDeGalo">Crista-de-Galo</button>
+                        <button id="CancaoDaIndia">Canção da Índia</button>
+                        <button id="FigueiraDeJardim">Figueira-de-Jardim</button>
+                        <button id="SamambaiaAmericana">Samambaia-Americana</button>
+                        <button id="Manjeircao">Manjericão</button>
+                        <button id="RaboDeBurro">Rabo-de-burro</button>
+                        <button id="PinheiroDeBuda">Pinheiro de Buda</button>
+                        <button id="OrelhaDeElefante">Orelha-de-Elefante</button>
+                        <button id="SaguDeJardim">Sagu-de-Jardim</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </aside>
+   
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+        <h1 id = nome_planta>Manjericão</h1>
+        <br><br>
+        <div class="img-planta">
+            <img src="imagens/manjericao.jpg" alt="Manjericão">
+            <!--<img src="https://www.google.com/imgres?q=samambaia&imgurl=https%3A%2F%2Fplantasedecor.com.br%2Fwp-content%2Fuploads%2F2024%2F02%2Fsamambaia-dentro-de-casa-930x620.jpg&imgrefurl=https%3A%2F%2Fplantasedecor.com.br%2Fsamambaia-americana-dentro-de-casa%2F&docid=CZTZ_tjWsJO5LM&tbnid=zqTAEiIiXClxvM&vet=12ahUKEwjsnsSX8fWJAxWWuJUCHTtHAT8QM3oECBwQAA..i&w=930&h=620&hcb=2&ved=2ahUKEwjsnsSX8fWJAxWWuJUCHTtHAT8QM3oECBwQAA" alt="">-->
+            <div id="resumo">
+                <h2>Resumo da planta:</h2>
+                <p>Uma erva aromática amplamente cultivada para uso culinário. 
+                    Originário da Índia, é uma planta anual que cresce rapidamente e se destaca por seu aroma fresco e propriedades medicinais.</p>
+            </div>
+            
+            
+        </div> 
+        <br>
+        <br>
+        <br>
+
+       <div id="info">
+            <h2>Informações Cíentificas: </h2>
+            <br>
+            <p> 
+                <b>Nome científico</b> - Ocimum basilicum L.
+                <br><br>
+                <b>Família botânica</b> - Lamiaceae;
+                <br><br>
+                <b>Origem</b> - Índia;
+                <br><br>
+                <b>Ciclo de vida</b> - Perene ou anual, dependendo da sua forma de plantação;
+                <br><br>
+                <b>Período de floração e frutificação</b> - Sua floração ocorre no verão, quando o manjericão é anual a floração indica que seu ciclo de 
+                vida está chegando ao final;
+                <br><br>
+                <b>Cuidados gerais</b> - Regar três vezes por semana é o suficiente, caso esteja frio ou chuvoso, deve-se diminuir a quantidade de água,
+                o manjericão gosta de ficar no mínimo 4 horas diárias no sol. Sempre que possível corte as flores do manjericão, 
+                pois ajudará a manter o sabor da folha mais acentuado;
+                <br><br>
+                <b>Uso</b> - Culinária, medicina com propriedades anti-inflamatórias e antimicrobianas, usado para chás;
+                <br><br>
+                <b>Curiosidades</b> - Ajuda a manter a pele bonita, suas propriedades bactericidas auxiliam na eliminação dos agentes responsáveis pela acne,
+                enquanto sua ação antisséptica e cicatrizante acelera a secagem das feridas, minimizando cicatrizes e manchas na pele;
+                <br><br>
+                <b>Conservação</b> -  O manjericão não está ameaçado de extinção por ser algo cultivado pelo mundo todo, também não apresenta riscos 
+                de propagação descontrolada;
+
+
+                </p>
+       </div>
+    </main>
+
+
+    <!-- Botão de rolagem -->
+    <button onclick="scrollToTop()" id="scrollBtn" title="Voltar ao topo">↑</button>
+
+
+    <!-- JavaScript -->
+    <script src="indexJOAO.js"></script>
+</body>
+</html>

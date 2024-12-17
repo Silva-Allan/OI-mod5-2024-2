@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lírio da Paz</title>
+    <link rel="stylesheet" href="styleJOAO.css">
+</head>
+<body>
+   <!-- Cabeçalho -->
+   <header class="header">
+    <img src="Imagens/logoqporraeessa-removebg-preview.png" alt="Logo" class="logo">
+    <nav class="nav">
+        <button class="nav-btn" onclick="scrollToSection('resumo')">Sobre a planta</button>
+        <button class="nav-btn" onclick="scrollToSection('info')">Informações Científicas</button>
+        <button class="nav-btn"></button>
+    </nav>
+</header>
+
+
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+        <button class="toggle-btn">&#9776;</button>
+        <div class="center">
+            <div class="icon-group">
+               <!-- Seção Nativas -->
+               <div class="icon-container">
+                <button class="icon" id="nativas-btn">
+                    <img class="imagem" src="Imagens\plantanatural-removebg-preview.png" alt="Nativas">
+                    <span class="icon-label">Nativas</span>
+                </button>
+                <div class="list" id="nativas-list">
+                    <button id="Araucaria">Araucaria</button>
+                    <button id="Petunia">Petúnia</button>
+                    <button id="IrisDaPraia">Íris da Praia</button>
+                    <button id="JasmimBrasileiro">Jasmim Brasileiro</button>
+                </div>
+            </div>
+            <!-- Seção Invasoras -->
+            <div class="icon-container">
+                <button class="icon" id="invasoras-btn">
+                    <img class="imagem" src="Imagens\plantainvasora-removebg-preview.png" alt="Invasoras">
+                    <span class="icon-label">Invasoras</span>
+                </button>
+                <div class="list" id="invasoras-list">
+                    <button id="CostelaDeAdao">Costela de Adão</button>
+                    <button id="LirioDaPaz">Lírio-da-Paz</button>
+                    <button id="DracenaVermelha">Dracena Vermelha</button>
+                    <button id="FolhaDaFOrtuna">Folha da Fortuna</button>
+                    <button id="Pessegueiro">Pessegueiro</button>
+                    <button id="CristaDeGalo">Crista-de-Galo</button>
+                    <button id="CancaoDaIndia">Canção da Índia</button>
+                    <button id="FigueiraDeJardim">Figueira-de-Jardim</button>
+                    <button id="SamambaiaAmericana">Samambaia-Americana</button>
+                    <button id="Manjeircao">Manjericão</button>
+                    <button id="RaboDeBurro">Rabo-de-burro</button>
+                    <button id="PinheiroDeBuda">Pinheiro de Buda</button>
+                    <button id="OrelhaDeElefante">Orelha-de-Elefante</button>
+                    <button id="SaguDeJardim">Sagu-de-Jardim</button>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </aside>
+   
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+        <h1 id = nome_planta>Lírio da Paz</h1>
+        <br><br>
+        <div class="img-planta">
+            <img src="imagens/Lirio-da-paz.jpg" alt="Lírio-da-Paz">
+            <!--<img src="https://www.google.com/imgres?q=samambaia&imgurl=https%3A%2F%2Fplantasedecor.com.br%2Fwp-content%2Fuploads%2F2024%2F02%2Fsamambaia-dentro-de-casa-930x620.jpg&imgrefurl=https%3A%2F%2Fplantasedecor.com.br%2Fsamambaia-americana-dentro-de-casa%2F&docid=CZTZ_tjWsJO5LM&tbnid=zqTAEiIiXClxvM&vet=12ahUKEwjsnsSX8fWJAxWWuJUCHTtHAT8QM3oECBwQAA..i&w=930&h=620&hcb=2&ved=2ahUKEwjsnsSX8fWJAxWWuJUCHTtHAT8QM3oECBwQAA" alt="">-->
+            <div id="resumo">
+                <h2>Resumo da planta:</h2>
+                <p>Muito apreciado por suas flores brancas e folhas verdes brilhantes,
+                     é uma planta purificadora de ar que cresce bem em ambientes internos com baixa luminosidade.</p>    
+            </div>
+            
+            
+        </div> 
+        <br>
+        <br>
+        <br>
+
+       <div id="info">
+            <h2>Informações Cíentificas: </h2>
+            <br>
+            <p> 
+                <b>Nome científico</b> - Spathiphyllum wallisii;
+                <br><br>
+                <b>Família botânica</b> -Araceae;
+                <br><br>
+                <b>Origem</b> - América do Sul, Colômbia, Venezuela;
+                <br><br>
+                <b>Ciclo de vida</b> - Perene, ciclo de vida longo, mais de dois anos;
+                <br><br>
+                <b>Período de floração e frutificação</b> - O florescimento acontece o ano inteiro, de forma mais abundante durante a primavera e verão;
+                <br><br>
+                <b>Cuidados gerais</b> - Esta planta não se adapta muito bem em climas frios, abaixo de 15°C , 
+                deve ser regada apenas quando o solo estiver bem seco, usando sempre pouca água(água filtrada ou de chuva), 
+                pois não lidam bem com dosagem de produtos químicos, em especial o cloro;
+                <br><br>
+                <b>Uso</b> - Decorativa, é uma planta tóxica para animais e humanos caso ocorra ingestão;
+                <br><br>
+                <b>Curiosidades</b> - O Clean Air Study da NASA demonstrou que a planta é eficaz em retirar toxinas prejudiciais do ar;
+                <br><br>
+                <b>Conservação</b> - Não apresenta grande impacto ambiental e não consta na lista da IUCN (União Internacional para a Conservação da Natureza) 
+                como ameaçada;
+
+
+                </p>
+       </div>
+    </main>
+
+
+    <!-- Botão de rolagem -->
+    <button onclick="scrollToTop()" id="scrollBtn" title="Voltar ao topo">↑</button>
+
+
+    <!-- JavaScript -->
+    <script src="indexJOAO.js"></script>
+</body>
+</html>
